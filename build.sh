@@ -23,8 +23,19 @@ download() {
     fi
 }
 
+build() {
+    cd $DIR
+
+    log "Installing NPM dependencies."
+    npm install
+
+    log "Building default font."
+    npm run build -- contents::iosevka
+}
+
 main() {
     download
+    build
 }
 
 main
