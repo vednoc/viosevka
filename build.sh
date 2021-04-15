@@ -50,7 +50,7 @@ build() {
     npm install
 
     log "Building default font."
-    npm run build -- contents::iosevka
+    npm run build -- ttf::iosevka
 }
 
 main() {

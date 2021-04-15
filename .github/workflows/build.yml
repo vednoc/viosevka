@@ -17,5 +17,8 @@ jobs:
               with:
                   node-version: '14'
 
+            - name: Get system packages
+              run: apt install ttfautohint libttfautohint-dev
+
             - name: Run build script
               run: sh build.sh
