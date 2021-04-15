@@ -25,6 +25,14 @@ cmd() {
     fi
 }
 
+err() {
+    out="$?"
+    if [ ! "$out" = 0 ]; then
+        lor "Ran into an error. Build stopped."
+        exit 1
+    fi
+}
+
 download() {
     if [ -d "$DIR" ]; then
         log "Source code is already available."
@@ -46,8 +54,8 @@ build() {
 }
 
 main() {
-    download
-    build
+    download || err
+    build || err
 }
 
 main
