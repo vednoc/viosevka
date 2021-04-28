@@ -43,6 +43,8 @@ download() {
 }
 
 build() {
+    cp viosevka.toml $DIR/private-build-plans.toml
+
     cd $DIR
     cmd npm
 
@@ -50,7 +52,7 @@ build() {
     npm install
 
     log "Building default font."
-    npm run build -- ttf::iosevka
+    npm run build -- ttf::viosevka
 }
 
 main() {
