@@ -55,9 +55,18 @@ build() {
     npm run build -- ttf::viosevka
 }
 
+link() {
+    if [ ! -L "font" ]; then
+        ln -s "$DIR/dist/viosevka" font
+    fi
+
+    log "Font directory is set."
+}
+
 main() {
     download || err
     build || err
+    link || err
 }
 
 main
