@@ -1,5 +1,28 @@
-* vIosevka
-Custom font based on Iosevka font family.
+
+* Viosevka
+Custom slab serif variant of [[https://github.com/be5invis/Iosevka][Iosevka font family]].
+
+[[https://github.com/vednoc/actions/actions/workflows/build.yml][https://github.com/vednoc/actions/actions/workflows/build.yml/badge.svg]]
+
+** About
+After finding out about Iosevka circa 2017, it quickly became my favorite font.
+
+# has been my favorite font that I started using circa 2017.
+
+Out of all fonts I've used over the years — and I've used many of them — Iosevka
+is the one that had the most sane defaults out of them all. That statement is
+purely on subjective basis, but the fact is: Iosevka is also the the most
+customizable font out of them all. You can try it out in the [[https://typeof.net/Iosevka/customizer][Customizer]].
+
+
+Since defaults already look amazing to me, my variant doesn't change a whole
+lot. I will probably tweak build plans as the time goes on and new versions of
+Iosevka are released, but the main goal of this project was to have GitHub
+Actions build the font.
+
+** Install
+Download [[https://github.com/vednoc/actions/actions/workflows/build.yml][workflow artifacts]] from the latest workflow run, extract the contents,
+and install them manually.
 
 ** License
 Source code released under the [[./license][MIT License]].
