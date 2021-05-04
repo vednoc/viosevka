@@ -1,2 +1,5 @@
 * vIosevka
 Custom font based on Iosevka font family.
+
+** License
+Source code released under the [[./license][MIT License]].
