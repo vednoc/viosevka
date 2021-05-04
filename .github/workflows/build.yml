@@ -26,4 +26,4 @@ jobs:
             - uses: actions/upload-artifact@v2
               with:
                   name: Viosevka
-                  path: font/viosevka
+                  path: Iosevka-6.0.0-preview.1/dist/viosevka
