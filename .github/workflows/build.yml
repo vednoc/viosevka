@@ -25,5 +25,10 @@ jobs:
 
             - uses: actions/upload-artifact@v2
               with:
-                  name: Viosevka
-                  path: src/dist/viosevka
+                  name: viosevka-ttf
+                  path: src/dist/viosevka/ttf
+
+            - uses: actions/upload-artifact@v2
+              with:
+                  name: viosevka-ttf-unhinted
+                  path: src/dist/viosevka/ttf-unhinted
