@@ -38,7 +38,7 @@ download() {
         log "Source code is already available."
     else
         log "Downloading and extracting source code."
-        curl -L $URL | tar xz --directory
+        curl -L $URL | tar xz
         mv Iosevka-* $DIR
     fi
 }
