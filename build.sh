@@ -3,7 +3,7 @@
 # Font helpers.
 VERSION="6.0.0-preview.1"
 URL="https://github.com/be5invis/Iosevka/archive/refs/tags/v$VERSION.tar.gz"
-DIR="Iosevka-$VERSION"
+DIR="src"
 
 # Color helpers.
 RED="\033[0;31m"
@@ -38,7 +38,8 @@ download() {
         log "Source code is already available."
     else
         log "Downloading and extracting source code."
-        curl -L $URL | tar xvz
+        curl -L $URL | tar xz --directory
+        mv Iosevka-* $DIR
     fi
 }
 
@@ -53,6 +54,8 @@ build() {
 
     log "Building default font."
     npm run build -- ttf::viosevka
+
+    cd ..
 }
 
 link() {
@@ -60,7 +63,7 @@ link() {
         ln -s "$DIR/dist/viosevka" font
     fi
 
-    log "Font directory is set."
+    log "Font built successfully."
 }
 
 main() {
