@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Font helpers.
-VERSION="6.0.0-preview.1"
+VERSION="6.1.3"
 URL="https://github.com/be5invis/Iosevka/archive/refs/tags/v$VERSION.tar.gz"
 DIR="src"
 
