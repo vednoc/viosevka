@@ -54,11 +54,11 @@ build() {
 
     log "Building default font."
     npm run build -- ttf::viosevka
-
-    cd ..
 }
 
 link() {
+    cd ..
+
     if [ ! -L "font" ]; then
         ln -s "$DIR/dist/viosevka" font
     fi
