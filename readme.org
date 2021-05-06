@@ -1,8 +1,16 @@
+#+STARTUP: nofold
+#+HTML: <div align="center">
 
 * Viosevka
 Custom slab serif variant of [[https://github.com/be5invis/Iosevka][Iosevka font family]].
 
 [[https://github.com/vednoc/actions/actions/workflows/build.yml][https://github.com/vednoc/actions/actions/workflows/build.yml/badge.svg]]
+
+#+HTML: <img src="https://user-images.githubusercontent.com/18245694/117317024-6c8f1100-ae89-11eb-87b0-995642c01565.png" width="100%"/>
+
+/Compare to [[https://user-images.githubusercontent.com/18245694/117317019-6b5de400-ae89-11eb-9889-0e95a5c8e6fb.png][default Iosevka Slab]]./
+
+#+HTML: </div>
 
 ** About
 After finding out about Iosevka circa 2017, it quickly became my favorite font.
